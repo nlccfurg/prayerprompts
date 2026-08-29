@@ -422,9 +422,9 @@ function pray () {
   const prayerElement = document.getElementById('prayer')
   prayerElement.style.display = 'flex'
   var psalmNumber = Math.floor(Math.random() * 150)
-  const psalmLink1 = "<a href='https://my.bible.com/bible/1713/PSA." + psalmNumber + ".CSB' target='_blank' class='button buttonSmall'>open random Psalm</a> &nbsp; &nbsp; <a href='https://randombibleizer.spiffy.tech' target='_blank' class='button buttonSmall'>open Random Bibleizer</a>"
+  const psalmLink1 = "<a href='https://my.bible.com/bible/1713/PSA." + psalmNumber + ".ESV' target='_blank' class='button buttonSmall'>open random Psalm</a> &nbsp; &nbsp; <a href='https://randombibleizer.spiffy.tech' target='_blank' class='button buttonSmall'>open Random Bibleizer</a>"
   var psalmNumber = Math.floor(Math.random() * 150)
-  const psalmLink2 = "<a href='https://my.bible.com/bible/1713/PSA." + psalmNumber + ".CSB' target='_blank' class='button buttonSmall'>open random Psalm</a> &nbsp; &nbsp; <a href='https://randombibleizer.spiffy.tech' target='_blank' class='button buttonSmall'>open Random Bibleizer</a>"
+  const psalmLink2 = "<a href='https://my.bible.com/bible/1713/PSA." + psalmNumber + ".ESV' target='_blank' class='button buttonSmall'>open random Psalm</a> &nbsp; &nbsp; <a href='https://randombibleizer.spiffy.tech' target='_blank' class='button buttonSmall'>open Random Bibleizer</a>"
 //  function listenForActionAudio (action) {
 //    try {
 //      const objWaitAudio = document.getElementById(action + '-audio')
@@ -479,11 +479,11 @@ function pray () {
         break
       case 'Confess':
         playActionAudio('confess', 2500)
-		mediaLinkElement.innerHTML = '<a href="./confess.html" target="_blank" class="button buttonSmall">Open Selft Examination Questions</a>';
+		mediaLinkElement.innerHTML = '<a href="./confess.html" target="_blank" class="button buttonSmall">Open Self Examination Questions</a>';
         break
       case 'Confession':
         playActionAudio('confession', 2500)
-		mediaLinkElement.innerHTML = '<a href="./confess.html" target="_blank" class="button buttonSmall">Open Selft Examination Questions</a>';
+		mediaLinkElement.innerHTML = '<a href="./confess.html" target="_blank" class="button buttonSmall">Open Self Examination Questions</a>';
         break
       case 'Daily Bread':
         playActionAudio('dailybread', 2500)
@@ -511,7 +511,7 @@ function pray () {
         break
       case 'Insightful Confession':
         playActionAudio('insightfulconfession', 2500)
-		mediaLinkElement.innerHTML = '<a href="./confess.html" target="_blank" class="button buttonSmall">Open Selft Examination Questions</a>';
+		mediaLinkElement.innerHTML = '<a href="./confess.html" target="_blank" class="button buttonSmall">Open Self Examination Questions</a>';
         break
       case 'Intercession':
         playActionAudio('intercession', 2500)
