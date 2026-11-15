@@ -1,93 +1,152 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<html lang="en">
 <head>
-	<meta http-equiv="CONTENT-Type" content="text/html; charset=UTF-8" />
-	<title> Prayer Prompts: Praying to hear and follow! </title>
-	<meta name="keywords" content="prayer, prayer wheel, discipleship, discipleship tool, prayer tool" />
-	<meta name="description" content="This tool is designed to help you spend quality time with God in order to seek Him and His will." />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="./style.css" />
-	<link rel="apple-touch-icon" sizes="57x57" href="./apple-touch-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="100x100" href="./apple-touch-icon-180x180.png">
-	<link rel="apple-touch-icon" sizes="512x512" href="./apple-touch-icon-512x512.png">
-	<script src="https://www.google.com/recaptcha/api.js" async defer>
-	</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Praise: Attributes of God | PrayerPrompts</title>
+<meta name="description" content="Praise God by reflecting on his attributes through these Scripture passages.">
+<link rel="apple-touch-icon" sizes="57x57" href="https://prayerprompts.com/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://prayerprompts.com/apple-touch-icon-180x180.png">
+<link rel="apple-touch-icon" sizes="512x512" href="https://prayerprompts.com/apple-touch-icon-512x512.png">
+<style>
+:root { color-scheme: dark; --ink: #fff; --text: #fff; --muted: #fff; --line: rgba(255,255,255,.3); --accent: #fff; --soft: transparent; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 28px; }
+body { margin: 0; background: #000; position: relative; isolation: isolate; min-height: 100vh; color: var(--text); font: 18px/1.8 Arial, Helvetica, sans-serif; -webkit-font-smoothing: antialiased; }
+/* Match the homepage: size the image to one screen, independent of policy length.
+   A separate layer avoids oversized body backgrounds on mobile Safari. */
+#bg { position: fixed; top: 0; left: 0; width: 100%; height: 100vh; height: 100svh; z-index: -1; pointer-events: none; background: #000 url("https://www.prayerprompts.com/background.jpg") right top / cover no-repeat; }
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: .22em; overflow-wrap: anywhere; }
+a:hover { color: #fff; text-decoration-thickness: 2px; }
+a:focus-visible, summary:focus-visible { outline: 3px solid #fff; outline-offset: 5px; border-radius: 3px; }
+.skip-link { position: absolute; left: 20px; top: -100px; background: #000; padding: 12px 20px; z-index: 5; }
+.skip-link:focus { top: 12px; }
+.shell { max-width: 1160px; margin: 0 auto; padding: 0 48px; }
+.site-header { border-bottom: 1px solid var(--line); background: transparent; }
+.header-inner { min-height: 104px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.brand { display: inline-flex; align-items: center; gap: 12px; color: var(--ink); font: 600 24px/1.2 Arial, Helvetica, sans-serif; text-decoration: none; letter-spacing: -.7px; }
+main.shell { max-width: 900px; margin: 40px auto; background: transparent; border-radius: 0; box-shadow: none; }
+.hero { padding: 54px 0 42px; max-width: 820px; }
+.eyebrow { margin: 0 0 14px; color: var(--accent); font-size: 11px; font-weight: 700; letter-spacing: .19em; text-transform: uppercase; }
+h1 { margin: 0 0 20px; color: var(--ink); font: 600 clamp(40px, 6.5vw, 64px)/1.08 Arial, Helvetica, sans-serif; letter-spacing: -.045em; }
+.updated { display: inline-flex; align-items: center; flex-wrap: wrap; gap: 5px; margin: 0 0 24px; font-size: 12px; color: var(--muted); }
+.updated::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: #fff; margin-right: 5px; }
+.hero .intro { max-width: 660px; margin: 0; font-size: 18px; line-height: 1.8; }
+strong { color: var(--ink); font-weight: 650; }
+.document-layout { padding-bottom: 44px; }
+.policy { min-width: 0; }
+.policy section { padding: 29px 0 33px; border-top: 1px solid var(--line); scroll-margin-top: 26px; }
+.section-heading { display: flex; align-items: baseline; gap: 14px; margin-bottom: 17px; }
+.section-number { color: #fff; font-size: 10px; letter-spacing: .05em; font-variant-numeric: tabular-nums; flex-shrink: 0; }
+h2 { margin: 0; color: var(--ink); font: 600 29px/1.3 Arial, Helvetica, sans-serif; letter-spacing: -.025em; }
+.policy p { margin: 0 0 16px; }
+.policy p:last-child, .policy ul:last-child { margin-bottom: 0; }
+.policy ul { padding-left: 21px; margin: 0 0 18px; }
+.policy li { padding-left: 5px; margin-bottom: 9px; }
+.policy li:last-child { margin-bottom: 0; }
+.policy li::marker { color: #fff; font-size: .75em; }
+.policy .summary-section { background: var(--soft); border: 1px solid var(--line); border-radius: 8px; padding: 27px 30px 30px; margin: 0 0 32px; }
+.summary-section + section { border-top: 0; padding-top: 0; }
+.site-footer { border-top: 1px solid var(--line); background: transparent; }
+.footer-inner { display: flex; justify-content: space-between; gap: 18px; align-items: center; min-height: 96px; font-size: 12px; color: var(--muted); }
+.footer-inner p { margin: 0; }
+.footer-inner a { text-decoration: none; }
+@media (max-width: 900px) { main.shell { margin: 28px 24px; } .shell { padding: 0 32px; } h2 { font-size: 26px; } }
+@media (max-width: 680px) {
+ .shell { padding: 0 22px; } main.shell { margin: 20px 12px; padding: 0 22px; border-radius: 8px; } .header-inner { min-height: 80px; gap: 14px; } .brand { font-size: 21px; } .hero { padding: 43px 0 31px; } .hero .intro { font-size: 16px; } .updated { margin-bottom: 18px; }
+ .document-layout { display: block; padding-bottom: 35px; } body { font-size: 16px; line-height: 1.8; } h2 { font-size: 26px; } .policy section { padding: 26px 0; } .policy .summary-section { padding: 24px 20px; } .section-heading { gap: 10px; }
+ .footer-inner { min-height: 90px; font-size: 11px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+@media print {
+ :root { color-scheme: light; --ink: #000; --text: #000; --muted: #000; --accent: #000; --line: #ccc; }
+ #bg, .site-header, .site-footer, .skip-link { display: none; } .section-number, .policy li::marker { color: #000; }
+ body { background: white; color: black; font-size: 11pt; } main.shell { margin: 0; max-width: none; background: white; border-radius: 0; box-shadow: none; } .shell { max-width: none; padding: 0; } .site-header, .hero { padding: 0 0 20px; } h1 { font-size: 36pt; } .document-layout { display: block; padding: 0; } .policy section { padding: 16px 0; } .section-heading { break-after: avoid; } h2 { font-size: 19pt; } .policy .summary-section { background: none; margin-bottom: 16px; } a { color: inherit; } p, li { orphans: 3; widows: 3; }
+}
+/* Keep the source's numbered attributes in the same reading layout as Privacy. */
+.attributes { margin: 0; padding-left: 32px; list-style-type: decimal-leading-zero; }
+.attributes > li { border-top: 1px solid var(--line); padding: 29px 0 33px 14px; }
+.attributes > li::marker { color: #fff; font-size: 12px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.attribute-heading { margin: 0 0 16px; font-size: 13px; line-height: 1.5; }
+.attribute-heading strong { display: block; margin-bottom: 5px; font-size: 26px; line-height: 1.3; letter-spacing: -.025em; overflow-wrap: anywhere; }
+.attributes p { margin: 0; }
+@media (max-width: 680px) { .attributes { padding-left: 26px; } .attributes > li { padding: 26px 0 26px 8px; } .attribute-heading strong { font-size: 23px; } }
+@media print { .attributes > li::marker { color: #000; } .attributes > li { padding-top: 16px; padding-bottom: 16px; } .attribute-heading { break-after: avoid; } }
+</style>
 </head>
-<body>
-<div id="bg">
-</div>
-<div id="app">
-	<div id="Setup">
-		<h1>
-			Attributes of God: 
-		</h1>
-			<ol>
-				<li><strong>Creator:</strong> Jn 1:3<br />
-				All things were made through him, and without him was not any thing made that was made.</li>
-				<li><strong>Holy:</strong> 1 Sam 2:2<br />
-				There is none holy like the Lord; there is none besides you; there is no rock like our God.</li>
-				<li><strong>Everlasting:</strong> Is 40:28<br />
-				Have you not known? Have you not heard? The Lord is the everlasting God, the Creator of the ends of the earth. He does not faint or grow weary; his understanding is unsearchable.</li>
-				<li><strong>Alpha/Omega:</strong> Rev 1:8<br />
-				"I am the Alpha and the Omega," says the Lord God, "who is and who was and who is to come, the Almighty."</li>
-				<li><strong>Provider:</strong> Ps 84:11<br />
-				For the Lord God is a sun and shield; the Lord bestows favor and honor. No good thing does he withhold from those who walk uprightly.</li>
-				<li><strong>Sustainer:</strong> Ps 55:22<br />
-				Cast your burden on the Lord, and he will sustain you; he will never permit the righteous to be moved.</li>
-				<li><strong>All Knowing:</strong> Heb 4:13<br />
-				And no creature is hidden from his sight, but all are naked and exposed to the eyes of him to whom we must give account.</li>
-				<li><strong>All Wise:</strong> Rom 16:27<br />
-				to the only wise God be glory forevermore through Jesus Christ! Amen.</li>
-				<li><strong>Life:</strong> John 1:4<br />
-				In him was life, and the life was the light of men.</li>
-				<li><strong>Life Giver:</strong> John 10:10<br />
-				The thief comes only to steal and kill and destroy. I came that they may have life and have it abundantly.</li>
-				<li><strong>Creator, Lord of all, Self-sufficient, Giver of Life:</strong> Acts 17:24-25<br />
-				The God who made the world and everything in it, being Lord of heaven and earth, does not live in temples made by man, nor is he served by human hands, as though he needed anything, since he himself gives to all mankind life and breath and everything.</li>
-				<li><strong>Salvation:</strong> Acts 4:12<br />
-				And there is salvation in no one else, for there is no other name under heaven given among men by which we must be saved.</li>
-				<li><strong>Truth Teller:</strong> John 17:17<br />
-				Sanctify them in the truth; Your word is truth.</li>
-				<li><strong>Knower of Men:</strong> John 10:14<br />
-				I am the good shepherd. I know my own, and my own know me.</li>
-				<li><strong>Motivator:</strong> Philippians 2:13<br />
-				for it is God who works in you, both to will and to work for his good pleasure.</li>
-				<li><strong>Lord of All:</strong> Matt 28:18<br />
-				All authority has been given to me in heaven and on earth.</li>
-				<li><strong>Beautiful:</strong> Psalm 27:4<br />
-				One thing have I asked of the Lord, that will I seek after: that I may dwell in the house of the Lord all the days of my life, to gaze upon the beauty of the Lord and to inquire in his temple.</li>
-				<li><strong>Protector:</strong> Psalm 18:2<br />
-				The Lord is my rock, my fortress, and my deliverer, my God, my rock where I seek refuge, my shield and the horn of my salvation, my stronghold.</li>
-				<li><strong>Rock:</strong> 2 Samual 22:32<br />
-				For who is God, but the Lord? And who is a rock, except our God?</li>
-				<li><strong>Trustworthy:</strong> Isaiah 26:4<br />
-				Trust in the Lord forever, because in the Lord, the Lord himself, is an everlasting rock!</li>
-				<li><strong>Gift giver, Unchanging:</strong> James 1:17<br />
-				Every good and perfect gift is from above, coming down from the Father of lights, who does not change like shifting shadows.</li>
-				<li><strong>Loving:</strong> Lamentations 3:22-23<br />
-				Because of the Lord ’s faithful love we do not perish, for his mercies never end. They are new every morning; great is your faithfulness!</li>
-				<li><strong>Unstoppable:</strong> Job 42:2<br />
-				I know that you can do anything and no plan of yours can be thwarted.</li>
-				<li><strong>Purpose Giver:</strong> Ephesians 2:10<br />
-				For we are his workmanship, created in Christ Jesus for good works, which God prepared ahead of time for us to do.</li>
-				<li><strong>Healer (Jehovah Rapha):</strong> Psalm 103:3 He forgives all your iniquity; he heals all your diseases.</li>
-				<li><strong>Worthy:</strong> Psalm 18:3<br />
-				I called to the Lord, who is worthy of praise, and I was saved from my enemies.</li>
-				<li><strong>Jealous:</strong> Joshua 24:19<br />
-				Then Joshua said to the people, “You will not be able to serve the Lord, for He is a holy God. He is a jealous God; He will not forgive your transgression or your sins</li>
-				<li><strong>Righteous:</strong> Judge Psalm 7:11<br />
-				God is a righteous judge and a God who shows his wrath every day.</li>
-				<li><strong>Gracious:</strong> 2 Kings 13:23<br />
-				but the Lord was gracious to them, had compassion on them, and turned toward them because of his covenant with Abraham, Isaac, and Jacob. He was not willing to destroy them. Even now he has not banished them from his presence. AND Psalm 145:8<br />
-				The Lord is gracious and compassionate, slow to anger and great in faithful love.</li>
-				<li><strong>Reigning:</strong> Matthew 28:18-20<br />
-				Jesus came near and said to them, “All authority has been given to me in heaven and on earth. Go, therefore, and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe everything I have commanded you. And remember, I am with you always, to the end of the age.”</li>
-				<li><strong>Victor over death:</strong> 1 Corinthians 15:55-57<br />
-				Where, death, is your victory? Where, death, is your sting? The sting of death is sin, and the power of sin is the law. But thanks be to God, who gives us the victory through our Lord Jesus Christ!</li>
-				<li><strong>Conquerer:</strong> John 16:33<br />
-				I have told you these things so that in me you may have peace. You will have suffering in this world. Be courageous! I have conquered the world. </li>
-			</ol>
-	</div>
-</div>
+<body id="top">
+<div id="bg" aria-hidden="true"></div>
+<a class="skip-link" href="#praise">Skip to attributes of God</a>
+<header class="site-header"><div class="shell header-inner">
+<span class="brand"><a href="https://prayerprompts.com">PrayerPrompts</a></span>
+</div></header>
+<main class="shell">
+<div class="hero"><p class="eyebrow">PrayerPrompts</p><h1>Attributes of God:</h1></div>
+<div class="document-layout"><article id="praise" aria-label="Attributes of God" tabindex="-1"><ol class="attributes"><li><div class="attribute-heading"><strong>Creator:</strong> Jn 1:3</div><p>
+				All things were made through him, and without him was not any thing made that was made.</p></li>
+<li><div class="attribute-heading"><strong>Holy:</strong> 1 Sam 2:2</div><p>
+				There is none holy like the Lord; there is none besides you; there is no rock like our God.</p></li>
+<li><div class="attribute-heading"><strong>Everlasting:</strong> Is 40:28</div><p>
+				Have you not known? Have you not heard? The Lord is the everlasting God, the Creator of the ends of the earth. He does not faint or grow weary; his understanding is unsearchable.</p></li>
+<li><div class="attribute-heading"><strong>Alpha/Omega:</strong> Rev 1:8</div><p>
+				"I am the Alpha and the Omega," says the Lord God, "who is and who was and who is to come, the Almighty."</p></li>
+<li><div class="attribute-heading"><strong>Provider:</strong> Ps 84:11</div><p>
+				For the Lord God is a sun and shield; the Lord bestows favor and honor. No good thing does he withhold from those who walk uprightly.</p></li>
+<li><div class="attribute-heading"><strong>Sustainer:</strong> Ps 55:22</div><p>
+				Cast your burden on the Lord, and he will sustain you; he will never permit the righteous to be moved.</p></li>
+<li><div class="attribute-heading"><strong>All Knowing:</strong> Heb 4:13</div><p>
+				And no creature is hidden from his sight, but all are naked and exposed to the eyes of him to whom we must give account.</p></li>
+<li><div class="attribute-heading"><strong>All Wise:</strong> Rom 16:27</div><p>
+				to the only wise God be glory forevermore through Jesus Christ! Amen.</p></li>
+<li><div class="attribute-heading"><strong>Life:</strong> John 1:4</div><p>
+				In him was life, and the life was the light of men.</p></li>
+<li><div class="attribute-heading"><strong>Life Giver:</strong> John 10:10</div><p>
+				The thief comes only to steal and kill and destroy. I came that they may have life and have it abundantly.</p></li>
+<li><div class="attribute-heading"><strong>Creator, Lord of all, Self-sufficient, Giver of Life:</strong> Acts 17:24-25</div><p>
+				The God who made the world and everything in it, being Lord of heaven and earth, does not live in temples made by man, nor is he served by human hands, as though he needed anything, since he himself gives to all mankind life and breath and everything.</p></li>
+<li><div class="attribute-heading"><strong>Salvation:</strong> Acts 4:12</div><p>
+				And there is salvation in no one else, for there is no other name under heaven given among men by which we must be saved.</p></li>
+<li><div class="attribute-heading"><strong>Truth Teller:</strong> John 17:17</div><p>
+				Sanctify them in the truth; Your word is truth.</p></li>
+<li><div class="attribute-heading"><strong>Knower of Men:</strong> John 10:14</div><p>
+				I am the good shepherd. I know my own, and my own know me.</p></li>
+<li><div class="attribute-heading"><strong>Motivator:</strong> Philippians 2:13</div><p>
+				for it is God who works in you, both to will and to work for his good pleasure.</p></li>
+<li><div class="attribute-heading"><strong>Lord of All:</strong> Matt 28:18</div><p>
+				All authority has been given to me in heaven and on earth.</p></li>
+<li><div class="attribute-heading"><strong>Beautiful:</strong> Psalm 27:4</div><p>
+				One thing have I asked of the Lord, that will I seek after: that I may dwell in the house of the Lord all the days of my life, to gaze upon the beauty of the Lord and to inquire in his temple.</p></li>
+<li><div class="attribute-heading"><strong>Protector:</strong> Psalm 18:2</div><p>
+				The Lord is my rock, my fortress, and my deliverer, my God, my rock where I seek refuge, my shield and the horn of my salvation, my stronghold.</p></li>
+<li><div class="attribute-heading"><strong>Rock:</strong> 2 Samual 22:32</div><p>
+				For who is God, but the Lord? And who is a rock, except our God?</p></li>
+<li><div class="attribute-heading"><strong>Trustworthy:</strong> Isaiah 26:4</div><p>
+				Trust in the Lord forever, because in the Lord, the Lord himself, is an everlasting rock!</p></li>
+<li><div class="attribute-heading"><strong>Gift giver, Unchanging:</strong> James 1:17</div><p>
+				Every good and perfect gift is from above, coming down from the Father of lights, who does not change like shifting shadows.</p></li>
+<li><div class="attribute-heading"><strong>Loving:</strong> Lamentations 3:22-23</div><p>
+				Because of the Lord ’s faithful love we do not perish, for his mercies never end. They are new every morning; great is your faithfulness!</p></li>
+<li><div class="attribute-heading"><strong>Unstoppable:</strong> Job 42:2</div><p>
+				I know that you can do anything and no plan of yours can be thwarted.</p></li>
+<li><div class="attribute-heading"><strong>Purpose Giver:</strong> Ephesians 2:10</div><p>
+				For we are his workmanship, created in Christ Jesus for good works, which God prepared ahead of time for us to do.</p></li>
+<li><div class="attribute-heading"><strong>Healer (Jehovah Rapha):</strong> Psalm 103:3</div><p>He forgives all your iniquity; he heals all your diseases.</p></li>
+<li><div class="attribute-heading"><strong>Worthy:</strong> Psalm 18:3</div><p>
+				I called to the Lord, who is worthy of praise, and I was saved from my enemies.</p></li>
+<li><div class="attribute-heading"><strong>Jealous:</strong> Joshua 24:19</div><p>
+				Then Joshua said to the people, “You will not be able to serve the Lord, for He is a holy God. He is a jealous God; He will not forgive your transgression or your sins</p></li>
+<li><div class="attribute-heading"><strong>Righteous:</strong> Judge Psalm 7:11</div><p>
+				God is a righteous judge and a God who shows his wrath every day.</p></li>
+<li><div class="attribute-heading"><strong>Gracious:</strong> 2 Kings 13:23</div><p>
+				but the Lord was gracious to them, had compassion on them, and turned toward them because of his covenant with Abraham, Isaac, and Jacob. He was not willing to destroy them. Even now he has not banished them from his presence. AND Psalm 145:8<br>
+				The Lord is gracious and compassionate, slow to anger and great in faithful love.</p></li>
+<li><div class="attribute-heading"><strong>Reigning:</strong> Matthew 28:18-20</div><p>
+				Jesus came near and said to them, “All authority has been given to me in heaven and on earth. Go, therefore, and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe everything I have commanded you. And remember, I am with you always, to the end of the age.”</p></li>
+<li><div class="attribute-heading"><strong>Victor over death:</strong> 1 Corinthians 15:55-57</div><p>
+				Where, death, is your victory? Where, death, is your sting? The sting of death is sin, and the power of sin is the law. But thanks be to God, who gives us the victory through our Lord Jesus Christ!</p></li>
+<li><div class="attribute-heading"><strong>Conquerer:</strong> John 16:33</div><p>
+				I have told you these things so that in me you may have peace. You will have suffering in this world. Be courageous! I have conquered the world.</p></li></ol></article></div>
+</main>
+<footer class="site-footer"><div class="shell footer-inner"><p>PrayerPrompts</p><a href="#top">Back to top <span aria-hidden="true">↑</span></a></div></footer>
 </body>
 </html>
